@@ -1,0 +1,30 @@
+@font-face { font-family: 'MyWebFont'; src: url('webfont.ttf') format('truetype'); }
+
+* { margin: 0; padding: 0; }
+body { color: #FFF; font-family: 'Roboto', sans-serif; font-size: 16px; }
+main { background-image: url('bg.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; bottom: 0; left: 0; position: fixed; right: 0; top: 0; }
+header,
+footer { align-items: center; box-sizing: border-box; display: flex; justify-content: center;
+padding: 0.5em; }
+header { height: 66.666%; }
+article { background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em; display: none; padding: 1em; }
+article.active { display: block; }
+p { margin-top: 0.5em; }
+p:first-child { margin-top: 0; }
+ul { margin-top: 1em; text-align: center; }
+li { background-color: rgba(0, 0, 255, 0.5); cursor: pointer; display: inline-block; list-style: none; margin: 0 0.5em; padding: 0.5em 1.5em; }
+li.yes { background-color: rgba(0, 255, 0, 0.5); }
+li.no { background-color: rgba(255, 0, 0, 0.5); }
+footer { height: 33.333%; }
+img { max-height: 100%; max-width: 100%; }
+
+@media screen and (orientation: landscape) {
+	header,
+	footer { height: 100%; position: absolute; }
+	header { left: 0; width: 66.666%; }
+	footer { right: 0; width: 33.333%; }
+}
+
+@media (min-width: 800px) {
+	body { font-size: 24px; }
+}
